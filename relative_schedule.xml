@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/linearLayout5"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="273dp"
+                android:layout_height="match_parent"
+                android:text="DeviceName"
+                android:id="@+id/ScheduleComponent" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:checked="false" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/tp_time"/>
+    <TextView
+        android:id="@+id/alarmrepeattv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Repeat"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="20sp"
+        android:layout_below="@+id/view2"/>
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmrepeattv"
+        android:layout_above="@+id/rlayout"
+        android:fillViewport="false"
+        android:id="@+id/scrollView2">
+        <LinearLayout
+            android:id="@+id/weekdayll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <CheckBox android:id="@+id/chk_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:checked="false" />
+            <CheckBox android:id="@+id/chk_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <CheckBox android:id="@+id/chk_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <CheckBox android:id="@+id/chk_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <CheckBox android:id="@+id/chk_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <CheckBox android:id="@+id/chk_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <CheckBox android:id="@+id/chk_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/weekdayll"/>
+
+        <Button
+            android:id="@+id/btn_set_alarm"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="Set "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/view3"
+            />
+        <Button
+            android:id="@+id/btn_quit_alarm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Cancle"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/view3"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/tp_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

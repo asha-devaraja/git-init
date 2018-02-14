@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/ssid"
+        android:layout_marginTop="71dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="true"
+        android:hint="Enter SSID"
+        android:textStyle="normal"
+        android:textColorHint="#989898"
+        android:layout_weight="0.03" />
+
+
+    <EditText
+        android:id="@+id/Pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textStyle="normal"
+        android:inputType="textPassword"
+        android:textColorHint="#989898"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pin1 device name"
+        android:textStyle="normal"
+        android:textColorHint="#989898"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pin2 device name"
+        android:textStyle="normal"
+        android:textColorHint="#989898"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/button5"
+        android:layout_marginTop="71dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

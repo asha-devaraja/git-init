@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginPageActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#99ccff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="LOGIN"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/Phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:hint="Phone Number"
+        android:textStyle="normal"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#3399ff"
+        android:layout_below="@+id/header"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="71dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/Client_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Phone_no"
+        android:layout_below="@+id/Phone_no"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="UserName"
+        android:textStyle="normal"
+        android:textColorHint="#3399ff" />
+
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textStyle="normal"
+        android:inputType="textPassword"
+        android:textColorHint="#3399ff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Phone_no"
+        android:layout_alignEnd="@+id/Phone_no"
+        android:layout_below="@+id/Client_id" />
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/image4"
+        android:src="@mipmap/image4"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configure the Wifi"
+        android:id="@+id/button4"
+        android:layout_alignRight="@+id/Password"
+        android:layout_alignEnd="@+id/Password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

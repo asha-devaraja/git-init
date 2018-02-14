@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/custom_toast_layout"
+    android:layout_height="match_parent">
+
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:id="@+id/custom_toast_extractEditText"
+        android:layout_marginTop="61dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/Register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#009999"
+        android:text="Register"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

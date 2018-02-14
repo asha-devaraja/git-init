@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android_examples.Connect2ControlHome">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.TELEPHONY_SERVICE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Connect2ControlHome"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.android_examples.Connect2ControlHome.SystemClass">
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity android:name="com.android_examples.Connect2ControlHome.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <activity
+                android:name="com.android_examples.Connect2ControlHome.MainActivity"
+                android:label="Connect2ControlHome"/>
+
+        <activity android:name="com.android_examples.Connect2ControlHome.Tab_1_Activity" />
+        <activity android:name="com.android_examples.Connect2ControlHome.Tab_2_Activity" />
+        <activity android:name="com.android_examples.Connect2ControlHome.Tab_3_Activity"></activity>
+
+
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.WifiConfigurationActivity"
+            android:label="Connect2ControlHome"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.schedularActivity"
+            android:label="Schedule"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.Relative_SchedularActivity"
+            android:label="Schedule"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.LoginPageActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.devicelistActivity"
+            android:label="Device List"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.Register1Activity"
+            android:label="Register Phone-Number"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+    <activity
+        android:name="com.android_examples.Connect2ControlHome.devicelistForGroup"
+        android:label="Group Devices"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+        <activity
+            android:name="com.android_examples.Connect2ControlHome.EditdeviceActivity"
+            android:label="Device Name"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+        <receiver android:name="com.android_examples.Connect2ControlHome.IncomingSms" android:exported="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
